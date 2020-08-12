@@ -9,14 +9,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
-body{
+.error-body{
 	background-color: #F6FBFF;
 	font-family: 'Montserrat', sans-serif;
 }
 
 
 
-.four-o-four{
+.error-section{
 	padding: 5px;
 	display: flex;
 	justify-content: center;
@@ -28,12 +28,11 @@ body{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: #1D2B36;
-	text-transform: uppercase;
 	text-align: center;
 }
 
-.four-o-four-content h1{
-	font-size: 250px;
+.error-section-content h1{
+	font-size: 14vw;
 }
 
 .go-back-btn{
@@ -62,14 +61,16 @@ body{
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 576px) {
-	.four-o-four-content h1{
-		font-size: 190px;
-	}
-
+@media screen and (max-width: 768px) {
 	.go-back-btn {
 	    padding: 5px 15px;
 	    font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.error-section-content h2{
+		font-size: 20px;
 	}
 }
 
